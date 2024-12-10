@@ -64,3 +64,11 @@ footer p {
 .sec-1 > div {
     flex: 1 1 50%;
 }
+
+@media only screen and (max-width: 720px) {
+    .sec-1 > div { flex: 1 1 50%; }
+}
+
+@media only screen and (max-width: 480px) {
+    .sec-1 > div { flex: 1 1 100%; }
+}
