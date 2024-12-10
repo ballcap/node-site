@@ -24,6 +24,12 @@ footer {
     background: #040404;
     padding: 12px 20px;
     color: #737373;
+    display: flex;
+    
+}
+
+footer > div {
+    flex: 1 1 25%;
 }
 
 .sec-1 {
