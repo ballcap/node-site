@@ -23,13 +23,18 @@ nav a:hover {
 footer {
     background: #040404;
     padding: 12px 20px;
-    color: #737373;
     display: flex;
-    
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 footer > div {
     flex: 1 1 25%;
+}
+
+footer p {
+    flex-basis: 100%;
+    color: #909090;
 }
 
 .sec-1 {
