@@ -54,8 +54,12 @@ footer p {
     color: #909090;
 }
 
+section {
+    padding: 66px 22px;
+    text-align: center;
+}
+
 .sec-1 {
-    padding: 100px;
     background: #efefef;
     color: #121212;
     display: flex;
@@ -71,4 +75,5 @@ footer p {
 
 @media only screen and (max-width: 480px) {
     footer > div { flex: 1 1 100%; }
+    section { padding: 33px 10px; }
 }
