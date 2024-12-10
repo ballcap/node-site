@@ -41,6 +41,7 @@ footer h1 {
 footer a {
     text-decoration: none;
     color: #31e8ee;
+    line-height: 22px;
 }
 
 footer a:hover {
