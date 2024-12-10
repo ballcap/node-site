@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+
+body {
+    background: #272727;
+    color: #ddd;
+    margin: 0;
+}
+
+nav {
+    padding: 10px;
+    background: #121212;
+}
+
+nav a {
+    text-decoration: none;
+    color: #32a2f2;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #040404;
+    padding: 12px 20px;
+    color: #737373;
+}
+
+.sec-1 {
+    padding: 100px;
+    background: #efefef;
+    color: #121212;
+    display: flex;
+}
+
+.sec-1 > div {
+    flex: 1 1 50%;
+}
