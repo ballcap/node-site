@@ -76,6 +76,8 @@ section {
     flex: 1 1 100%;
 }
 
+.right { text-align: right; }
+
 @media only screen and (max-width: 720px) {
     footer > div { flex: 1 1 50%; }
 }
@@ -83,4 +85,5 @@ section {
 @media only screen and (max-width: 480px) {
     footer > div { flex: 1 1 100%; }
     section { padding: 33px 10px; }
+    .right { text-align: center; }
 }
