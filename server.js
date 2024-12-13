@@ -1,6 +1,10 @@
 const express = require('express');
+const cors = require('cors');  // Import CORS
 const app = express();
 const PORT = 3000;
+
+// Enable CORS for all routes
+app.use(cors());
 
 app.use(express.static("public"));
 
@@ -14,6 +18,18 @@ app.get('/', (req, res) => {
     message: 'Welcome Back',
     message2: 'Home'
   });
+});
+
+// API route for dynamic content
+app.get('/api/content', (req, res) => {
+  const pages = {
+    home: { message: 'Homepage', message2: 'Hello World!' },
+    contact: { message: 'Get in Touch', message2: 'Contact Us' },
+    about: { message: 'About Us', message2: 'Who We Are' }
+  };
+
+  const page = req.query.page || 'home';  // Default to home
+  res.json(pages[page] || pages['home']);
 });
 
 app.get('/date/120924/users/currentuser/1795028364/contact', (req, res) => {
