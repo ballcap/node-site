@@ -17,5 +17,15 @@
     </section>
 
     <%- include("partials/footer") %>
+
+    <script>
+        async function loadContent(page) {
+            const response = await fetch(`/api/content?page=${page}`);
+            const data = await response.json();
+
+            document.getElementById('message').textContent = data.message;
+            document.getElementById('message2').textContent = data.message2;
+        }
+    </script>
 </body>
 </html>
