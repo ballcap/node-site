@@ -25,19 +25,23 @@
 
             const messageDiv = document.querySelector('.sec-1 div');
 
+            // Reset animation
+            messageDiv.classList.remove('slide-in', 'show');
+            void messageDiv.offsetWidth; // Force reflow to restart animation
+
             // Start animation
             messageDiv.classList.add('slide-in');
 
-            // Update text after a slight delay
+            // Update text after animation
             setTimeout(() => {
                 document.getElementById('message').textContent = data.message;
                 document.getElementById('message2').textContent = data.message2;
 
-                // Trigger show animation
+                // Show updated content
                 messageDiv.classList.remove('slide-in');
                 messageDiv.classList.add('show');
             }, 300);
-    }
-</script>
+        }
+    </script>
 </body>
 </html>
