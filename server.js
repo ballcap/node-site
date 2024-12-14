@@ -16,7 +16,8 @@ app.get('/', (req, res) => {
   res.render('index', {
     title: 'Index',
     message: 'Welcome Back',
-    message2: 'Home'
+    message2: 'Home',
+    imgurl: 'https://plus.unsplash.com/premium_photo-1733760125610-3b5ebc834623?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D'
   });
 });
 
