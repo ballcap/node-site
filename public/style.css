@@ -135,7 +135,7 @@ section {
     transform: translateY(0); /* Normal position */
 }
 
-section > div > img { width: 100%; }
+#imgurl { max-width: 100%; }
 
 @media only screen and (max-width: 720px) {
     footer > div { flex: 1 1 50%; }
