@@ -78,10 +78,7 @@ section {
 
 .right { text-align: right; }
 
-
-
-
-
+/* image slider/carousel */
 
 .slider {
     position: relative;
@@ -124,9 +121,19 @@ section {
     right: 10px;
 }
 
+/* animation for text to come down offscreen */
+.sec-1 div {
+    position: relative;
+    transition: transform 0.3s ease-out;
+}
 
+.slide-in {
+    transform: translateY(-100vh); /* Start out of frame */
+}
 
-
+.show {
+    transform: translateY(0); /* Normal position */
+}
 
 @media only screen and (max-width: 720px) {
     footer > div { flex: 1 1 50%; }
