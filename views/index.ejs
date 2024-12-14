@@ -23,9 +23,21 @@
             const response = await fetch(`/api/content?page=${page}`);
             const data = await response.json();
 
-            document.getElementById('message').textContent = data.message;
-            document.getElementById('message2').textContent = data.message2;
-        }
-    </script>
+            const messageDiv = document.querySelector('.sec-1 div');
+
+            // Start animation
+            messageDiv.classList.add('slide-in');
+
+            // Update text after a slight delay
+            setTimeout(() => {
+                document.getElementById('message').textContent = data.message;
+                document.getElementById('message2').textContent = data.message2;
+
+                // Trigger show animation
+                messageDiv.classList.remove('slide-in');
+                messageDiv.classList.add('show');
+            }, 300);
+    }
+</script>
 </body>
 </html>
